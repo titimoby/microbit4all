@@ -1,3 +1,8 @@
+# original version by Radomir Dopieralski
+# https://bitbucket.org/thesheep/micropython-max7219/
+# modified according to ideas from jezdean
+# https://github.com/microbit-playground/matrix7seg
+
 from microbit import spi
 
 _NOOP = 0
