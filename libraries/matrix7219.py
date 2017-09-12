@@ -1,7 +1,9 @@
-# original version by Radomir Dopieralski
-# https://bitbucket.org/thesheep/micropython-max7219/
-# modified according to ideas from jezdean
-# https://github.com/microbit-playground/matrix7seg
+"""
+original version by Radomir Dopieralski
+https://bitbucket.org/thesheep/micropython-max7219/
+modified according to ideas from jezdean
+https://github.com/microbit-playground/matrix7seg
+"""
 
 from microbit import spi
 
@@ -20,13 +22,15 @@ _SCANLIMIT = 11
 _SHUTDOWN = 12
 _DISPLAYTEST = 15
 
-#sample usage
-#import microbit
-#import matrix7219
-#display = matrix7219.Matrix8x8(microbit.spi, microbit.pin0)
-#display.fill(True)
-#display.pixel(2, 2, False)
-#display.show()
+"""
+sample usage
+import microbit
+import matrix7219
+display = matrix7219.Matrix8x8(microbit.spi, microbit.pin0)
+display.fill(True)
+display.pixel(2, 2, False)
+display.show()
+"""
 
 class Matrix8x8:
     def __init__(self, spi, cs):
